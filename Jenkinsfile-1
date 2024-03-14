@@ -8,7 +8,7 @@ pipeline {
       steps {
         withSonarQubeEnv(installationName: 'SonarDEV') { 
           echo " I am testing Sonarqube"
-          bat 'mvn clean verify sonar:sonar -Dsonar.token=squ_dc90a8290c3370c780c4326b9ef9b4ed2aa18292'
+          bat 'mvn clean verify sonar:sonar'
         }
       }
     }
